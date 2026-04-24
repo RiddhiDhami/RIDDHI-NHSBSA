@@ -139,8 +139,8 @@ Before running the project, ensure the following are installed:
 
 ## 🔹 Step 1: Clone the Repository
 
-git clone <your-repository-url>
-cd <your-project-folder>
+git clone https://github.com/RiddhiDhami/RIDDHI-NHSBSA.git
+cd RIDDHI-NHSBSA
 
 ## 🔹 Step 2: Run Tests Using Maven
 
