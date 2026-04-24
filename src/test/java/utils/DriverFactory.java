@@ -4,10 +4,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import pages.SearchPage;
 
 public class DriverFactory {
 
     private static WebDriver driver;
+    SearchPage page;
 
     public static WebDriver getDriver(String browser) {
 
@@ -23,7 +25,6 @@ public class DriverFactory {
         driver.manage().window().maximize();
         return driver;
     }
-
     public static WebDriver getDriver() {
         return driver;
     }
