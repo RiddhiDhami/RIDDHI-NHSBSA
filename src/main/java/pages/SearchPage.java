@@ -11,6 +11,9 @@ public class SearchPage {
     WebDriverWait wait;
 
     public SearchPage(WebDriver driver) {
+        if (driver == null) {
+            throw new RuntimeException("Driver is NULL in SearchPage constructor!");
+        }
         this.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
